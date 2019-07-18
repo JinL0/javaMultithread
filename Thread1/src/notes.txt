@@ -1,0 +1,6 @@
+Difference between thread.start() vs run(),
+Run:  native thread invokes the run() method in the Java thread,
+        which makes thread state change from Runnable to Running.
+
+Start(): When you call t1.start(), it starts a new thread and calls the run()
+        method of r1 internally to execute it within that new thread.
